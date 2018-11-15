@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>搜索结果</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/search.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/index.js"></script>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="header-top">
+                <div id="call-us"><span>CALL US NOW:</span>
+                    0123-456-666786666
+                </div>
+                <div id="account">
+                    <div id="myaccount">
+                        <a href="#">My Account &nbsp;|</a>
+                        <div id="menu-account">
+                            <ul>
+                                <li>
+                                    <a href="myaccount.html">
+                                        My Account
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        My Cart 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="collection.html">
+                                        My Collection
+                                    </a>
+                                </li>
+                                <li id="menu-login">
+                                    <a href="javascript:void(0)">
+                                        Login 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        Register 
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="checkout">
+                        <a href="checkout.html">
+                            &nbsp;Checkout
+                        </a>
+                    </div>
+                    <div id="login">
+                        <div id="login-top" >
+                            <strong>SIGN IN OR REGISTER</strong>
+                            <img class="guanbi-img" src="images/guanbi.png">
+                        </div>
+                        <div id="login-main">
+                            <!------登录------>
+                            <div id="sign-up">
+                                <form method="post" action="login.html">
+                                    <div id="username">
+                                        <label>
+                                            账号:
+                                        </label>
+                                        <input class="input-info" type="text"   />
+                                    </div>
+                                    <div id="passwd">
+                                        <label>
+                                            密码:
+                                        </label>
+                                        <input class="input-info" type="password"   />
+                                    </div>
+                                    <a>forget your password?</a>
+
+                                    <a href="javascript:void(0)">SIGN UP</a>
+                                </form>
+                            </div>
+
+                            <!------注册------>
+                            <div id="sign-in">
+                                <span>NEW HERE?</span><br/>
+                                <i>Registration is free and easy!</i>
+                                <ul>
+                                    <li><i>&nbsp;&nbsp;Faster checkout</i></li>
+                                    <li><i>&nbsp;&nbsp;Save muitiple shipping addresses</i></li>
+                                </ul>
+                                <a href="javascript:void(0)">CREAT AN ACCOUNT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header-center">
+                <img src="images/logo-orange.png"> 
+
+                <div id="search">
+                    <form method="get" action="index.jsp"> 
+                        <div id="input">
+                            <input type="text" placeHolder="Enter your keyword" />
+                        </div>
+                        <div id="select">
+                            <select>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                            </select>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div id="look">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </form>
+                </div>                           
+
+                <div id="my-cart">
+                    <div id="cart">
+                    </div>
+                </div>
+                <div id="my-collection">
+                    <i class="fa fa-heart-o"></i>
+                </div>
+            </div>
+
+            <div id="header-bottom">
+                <div id="guide-ban">    
+                    <ul>
+                        <li><a href="#">XAOMI</a></li>
+                        <li><a href="#">HUAWEI</a></li>
+                        <li><a href="#">VIVO</a></li>
+                        <li><a href="#">OPPO</a></li>
+                        <li><a href="#">APPLE</a></li>
+                        <li><a href="#">MEIZU</a></li>
+                        <li><a href="#">CART</a></li>
+                        <li><a href="#">COLLECTION</a></li>
+                        <li><a href="#">ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="se-main">
+            <div id="im-top">
+                <span class="detail">Search Results</span>
+                <ul id="menu">
+                    <li class="menu">Home</li>
+                    <li class="menu share">Share
+                        <div class="share-menu">
+                            <ul>
+                                <li>
+                                    <a href="https://qzone.qq.com" target="_blank"><i class="fa fa-qq"></i></a>
+                                    <span>QQ</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.weixin.qq.com" target="_blank"><i class="fa fa-wechat"></i></a>
+                                    <span>Wechart</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.weibo.com" target="_blank"><i class="fa fa-weibo"></i></a>
+                                    <span>Weibo</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                                    <span>FaceBook</span>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com"target="_blank"><i class="fa fa-twitter"></i></a>
+                                    <span>Twitter</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu">About us</li>
+                </ul>
+            </div>
+            <div id="search-results">
+                <div id="requirement">
+                    <a href="javascript:void(0)">按价格排序</a>
+                    <a href="javascript:void(0)">按销量排序</a>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                <div class="search-results">
+                    <img src="images/apple.png" >
+                    <span class="type">iphone6 plus</span><br />
+                    <i>6999$</i>
+                    <span class="volume">月售100</span>
+                </div>
+                </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer-main">
+                <div id="yourlink">
+                    <h3>付款方式</h3>
+                    <ul>
+                        <li>快捷支付</li>
+                        <li>信用卡</li>
+                        <li>余额宝</li>
+                        <li>蚂蚁花呗</li>
+                        <li>货到付款</li>
+                        <li>支付宝</li>
+                    </ul>
+                </div>
+                <div id="support">
+                    <h3>消费者保障</h3>
+                    <ul>
+                        <li>新手专区</li>
+                        <li>消费警示</li>
+                        <li>交易安全</li>
+                        <li>24小时在线帮助</li>
+                    </ul>
+                </div>
+                <div id="findstore">
+                    <a href="#" class="find">FIND A STORE</a>
+                    <a href="#" class="store">STORE LOCATION</a>
+                </div>
+                <div id="ditu">
+                    <img src="images/ditu.jpeg" />
+                </div>
+            </div>  
+            <div id="footer-bottom">
+                Copyright &copy; 2017.Company name All rights reserved.
+            </div>  
+        </div>
+    </body>
+</html>

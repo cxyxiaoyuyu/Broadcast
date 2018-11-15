@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>管理员</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/index.js"></script>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="header-top">
+                <div id="call-us"><span>CALL US NOW:</span>
+                    0123-456-666786666
+                </div>
+                <div id="account">
+                    <div id="myaccount">
+                        <a href="#">欢迎你 管理员 &nbsp;|</a>
+                        <div id="menu-account">
+                            <ul>
+                                <li>
+                                    <a href="myaccount.html">
+                                       会员列表 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        修改商品 
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="cart.html">
+                                        添加用户                
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="checkout">
+                        <a href="checkout.html">
+                            &nbsp;Checkout
+                        </a>
+                    </div>
+                    <div id="login">
+                        <div id="login-top" >
+                            <strong>SIGN IN OR REGISTER</strong>
+                            <img class="guanbi-img" src="images/guanbi.png">
+                        </div>
+                        <div id="login-main">
+                            <!------登录------>
+                            <div id="sign-up">
+                                <form method="post" action="login.html">
+                                    <div id="username">
+                                        <label>
+                                            账号:
+                                        </label>
+                                        <input class="input-info" type="text"   />
+                                    </div>
+                                    <div id="passwd">
+                                        <label>
+                                            密码:
+                                        </label>
+                                        <input class="input-info" type="password"   />
+                                    </div>
+                                    <a>forget your password?</a>
+
+                                    <a href="javascript:void(0)">SIGN UP</a>
+                                </form>
+                            </div>
+
+                            <!------注册------>
+                            <div id="sign-in">
+                                <span>NEW HERE?</span><br/>
+                                <i>Registration is free and easy!</i>
+                                <ul>
+                                    <li><i>&nbsp;&nbsp;Faster checkout</i></li>
+                                    <li><i>&nbsp;&nbsp;Save muitiple shipping addresses</i></li>
+                                </ul>
+                                <a href="javascript:void(0)">CREAT AN ACCOUNT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="header-center">
+                <img src="images/logo-orange.png"> 
+
+                <div id="search">
+                    <form method="get" action="index.jsp"> 
+                        <div id="input">
+                            <input type="text" placeHolder="Enter your keyword" />
+                        </div>
+                        <div id="select">
+                            <select>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                                <option>ALL Catgories</option>
+                            </select>
+                            <i class="fa fa-caret-down"></i>
+                        </div>
+                        <div id="look">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </form>
+                </div>                           
+
+                <div id="my-cart">
+                    <div id="cart">
+                    </div>
+                </div>
+                <div id="my-collection">
+                    <i class="fa fa-heart-o"></i>
+                </div>
+            </div>
+
+            <div id="header-bottom">
+                <div id="guide-ban">    
+                    <ul>
+                        <li><a href="#">XAOMI</a></li>
+                        <li><a href="#">HUAWEI</a></li>
+                        <li><a href="#">VIVO</a></li>
+                        <li><a href="#">OPPO</a></li>
+                        <li><a href="#">APPLE</a></li>
+                        <li><a href="#">MEIZU</a></li>
+                        <li><a href="#">CART</a></li>
+                        <li><a href="#">COLLECTION</a></li>
+                        <li><a href="#">ACCOUNT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div id="admin-main">
+            <div class="date">
+                日期范围: <input type="date" > 
+                <input type="text" placeholder="输入会员名名称,电话,邮箱">
+                <a class="btn btn-primary">搜用户
+                    <i class="fa fa-search"></i>
+                </a>
+            </div>
+            <div class="manageusr">
+                <a>批量删除</a>
+                <a class="addusr">添加用户</a>
+                <a class="saveadd">库存补充</a>
+                <a class="change">修改状态</a>
+            </div>
+        <div class="display">
+            <label>显示</label>
+            <select>
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+            </select>
+            <label>条</label>
+            <div class="filter">
+                <label>从当前数据中检索</label>
+                <input type="text" />
+            </div>
+        </div>
+        <div class="table">
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td>用户名</td>
+                    <td>性别</td>
+                    <td>手机</td>
+                    <td>邮箱</td>
+                    <td>地址</td>
+                    <td>加入时间</td>
+                    <td>状态</td>
+                    <td>是否会员</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>12345678</td>
+                    <td>男</td>
+                    <td>12345678900</td>
+                    <td>935443243@qq.com</td>
+                    <td>合肥市蜀山区锦绣大道99号(合肥学院)</td>
+                    <td>2017/3/5</td>
+                    <td>在线</td>
+                    <td>是</td>
+                    <td>
+                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-trash-o"></i>
+                        <i class="fa fa-key"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>12345678</td>
+                    <td>男</td>
+                    <td>12345678900</td>
+                    <td>935443243@qq.com</td>
+                    <td>合肥市蜀山区锦绣大道99号(合肥学院)</td>
+                    <td>2017/3/5</td>
+                    <td>在线</td>
+                    <td>是</td>
+                    <td>
+                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-trash-o"></i>
+                        <i class="fa fa-key"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>12345678</td>
+                    <td>男</td>
+                    <td>12345678900</td>
+                    <td>935443243@qq.com</td>
+                    <td>合肥市蜀山区锦绣大道99号(合肥学院)</td>
+                    <td>2017/3/5</td>
+                    <td>在线</td>
+                    <td>是</td>
+                    <td>
+                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-trash-o"></i>
+                        <i class="fa fa-key"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>12345678</td>
+                    <td>男</td>
+                    <td>12345678900</td>
+                    <td>935443243@qq.com</td>
+                    <td>1111111111111111111111111</td>
+                    <td>2017/3/5</td>
+                    <td>在线</td>
+                    <td>是</td>
+                    <td>
+                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-trash-o"></i>
+                        <i class="fa fa-key"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>0001</td>
+                    <td>12345678</td>
+                    <td>男</td>
+                    <td>12345678900</td>
+                    <td>935443243@qq.com</td>
+                    <td>1111111111111111111111111</td>
+                    <td>2017/3/5</td>
+                    <td>在线</td>
+                    <td>是</td>
+                    <td>
+                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-trash-o"></i>
+                        <i class="fa fa-key"></i>
+                    </td>
+                </tr>
+            </table>
+            
+            <div class="adduser floatbox">
+                <div class="top">
+                    <span>添加用户</span>
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="au-main">
+                    <form action="" method="get">
+                        <div class="user">
+                            <label>用户名</label>         
+                            <input type="text" />
+                        </div>
+                        <div class="sex">
+                            <label>性别</label>         
+                            <input type="radio">男
+                            <input type="radio">女 
+                        </div>
+                        <div class="phone">
+                            <label>手机</label>         
+                            <input type="text" />
+                        </div>
+                        <div class="email">
+                            <label>邮箱</label>         
+                            <input type="text" />
+                        </div>
+                        <div class="addr">
+                            <label>地址</label>         
+                            <input type="text" />
+                        </div>
+                        <div class="passwd">
+                            <label>密码</label>
+                            <input type="password" />
+                        </div>
+                        <div class="repasswd">
+                            <label>确认密码</label>
+                            <input type="password" />
+                        </div>
+                        <a>确定</a>
+                    </form>
+                </div>
+            </div>
+
+
+
+            <div class="chpasswd floatbox">
+                <div class="top">
+                    <span>修改密码</span>
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="cp-main">
+                    <form>
+                        <div class="user">
+                            <label>账户</label>
+                            <input type="text" />
+                        </div>
+                        <div class="passwd">
+                            <label>密码</label>
+                            <input type="text" />
+                        </div>
+                        <div class="repass">
+                            <label>确认密码</label>
+                            <input type="text" />
+                        </div>
+                        <a>确认</a>
+                    </form>
+                </div>
+            </div>
+            <div class="addsave floatbox">
+                <div class="top">
+                    <span>添加库存</span>
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="as-main">
+                    <form>
+                        <div class="type">
+                            <label>手机型号</label>
+                            <input type="text" />
+                        </div>
+                        <div class="num">
+                            <label>添加数量</label>
+                            <input type="text" />
+                        </div>
+                        <a>确定</a>
+                    </form>
+                </div>
+            </div>
+            <div class="chstate floatbox">
+                <div class="top">
+                    <span>修改状态</span>
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="cs-main">
+                    <form>
+                        <div class="type">
+                            <label>手机型号</label>
+                            <input type="text" />
+                        </div>
+                        <div class="state">
+                            <label>当前状态</label>
+                            <input type="text" />
+                        </div>
+                        <a>确定</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <a>上一页</a>
+            <a>1</a>
+            <a>下一页</a>
+        </div>
+        </div>
+
+
+        
+        <div id="footer">
+            <div id="footer-main">
+                <div id="yourlink">
+                    <h3>付款方式</h3>
+                    <ul>
+                        <li>快捷支付</li>
+                        <li>信用卡</li>
+                        <li>余额宝</li>
+                        <li>蚂蚁花呗</li>
+                        <li>货到付款</li>
+                        <li>支付宝</li>
+                    </ul>
+                </div>
+                <div id="support">
+                    <h3>消费者保障</h3>
+                    <ul>
+                        <li>新手专区</li>
+                        <li>消费警示</li>
+                        <li>交易安全</li>
+                        <li>24小时在线帮助</li>
+                    </ul>
+                </div>
+                <div id="findstore">
+                    <a href="#" class="find">FIND A STORE</a>
+                    <a href="#" class="store">STORE LOCATION</a>
+                </div>
+                <div id="ditu">
+                    <img src="images/ditu.jpeg" />
+                </div>
+            </div>  
+            <div id="footer-bottom">
+                Copyright &copy; 2017.Company name All rights reserved.
+            </div>  
+        </div>
+    </body>
+</html>

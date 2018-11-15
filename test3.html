@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>图片轮播</title>
+        <meta charset="utf-8">
+        <script src="js/jquery.js"></script>
+        <style>
+#container {
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#img-list {
+    height: 400px;
+    width: 4900px;
+    position: absolute;
+    z-index: 1;    
+    transform: translate3d(-700px,0px,0px);
+    transition: 0.8s;
+}
+#img-list img {
+    width: 700px;
+    height: 400px;
+    float: left;
+}
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="img-list">
+                <img src="images/vivo.jpg" />
+                <img src="images/xiaomi.jpg" />
+                <img src="images/huawei.jpg" />
+                <img src="images/oppo.jpg" />
+                <img src="images/apple.jpg" />
+                <img src="images/vivo.jpg" />
+                <img src="images/xiaomi.jpg" />
+            </div>
+        </div>
+        <script>
+//console.log($('#img-list').css("transform").substring(7).split(',')[4]);
+var time = setInterval(function(){
+    //console.log($('#img-list').css('transform'));
+    var current = parseInt($('#img-list').css("transform").substring(7).split(',')[4]);
+    //console.log(current);
+    var offset = current - 700 + 'px';
+    //console.log(offset);
+    $('#img-list').css({
+        'transform':'translate3d('+offset+',0px,0px)'
+    });
+},3000);
+        </script>
+    </body>
+</html>

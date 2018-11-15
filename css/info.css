@@ -1,0 +1,347 @@
+#info-main {
+    width: 100%;
+    height: 728px;
+    background: #fff;
+}
+#info-main #im-top {
+    width: 100%;
+    height: 66px;
+    background: #eee;
+    position: relative;
+}
+#info-main #im-top .detail {
+    font-size: 20px;
+    padding-left: 35px;
+    line-height: 45px;
+    font-family: RobotoBold;
+}
+#info-main #im-top #menu {
+    float: right;
+    margin: 15px 20px;
+}
+#info-main #im-top ul .menu {
+    float: right;
+    padding-right: 20px;
+    font-size: 15px;
+    font-family: RobotoRegular;
+    color: #464646;
+    cursor: pointer;
+}
+#info-main #im-top .menu:hover {
+    color: #ffaa00;
+}
+#info-main #im-top .share-menu {
+    width: 168px;
+    height: 245px;
+    background: #151515;
+    position: absolute;
+    right: 90px;
+    top: 46px;
+    opacity: 0;
+    color: #eee;
+    transform: scale(0);
+    transition: all .5s ease-in;
+}  
+#info-main #im-top .share-menu li:first-Child {
+    margin-top: 12px;
+}
+#info-main #im-top .share-menu li {
+    padding: 5px;
+}
+#info-main #im-top .share-menu a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffaa00;
+    margin-left: 12px;
+    color: #ffaa00;
+}
+#info-main #im-top .share-menu a:hover {
+    color: #fff;
+    background: #ffaa00;
+    border: 1px solid #ffaa00;
+}
+#info-main #im-top .share-menu span:hover {
+    color: #ffaa00;
+}
+#info-main #im-top .share-menu a .fa-qq {
+    font-size: 17px;
+    padding: 7px 6px;
+}
+#info-main #im-top .share-menu a .fa-wechat {
+    font-size: 17px;
+    padding: 7px 5px;
+}
+#info-main #im-top .share-menu a .fa-weibo {
+    font-size: 18px;
+    padding: 7px 5px;
+}
+#info-main #im-top .share-menu a .fa-facebook {
+    font-size: 19px;
+    padding: 7px 9px;
+}
+#info-main #im-top .share-menu a .fa-twitter {
+    font-size: 19px;
+    padding: 7px 7px;
+}
+#info-main #im-top .share-menu li span {
+    padding-left: 22px; 
+    font-family: PoppinsRegular;
+    font-size: 13px;
+}
+
+#info-main #im-top .share:hover .share-menu {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#info-main #im-left {
+    width: 50%;
+    height: 660px;
+    float: left;
+}
+#info-main #im-left #max-img {
+    width: 450px;
+    height: 450px;
+    border: 1px solid #eee;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 3;
+}
+#info-main #im-left #max-img #magnifier {
+    width:225px;
+    height: 225px;
+    position: absolute;
+    background: url(http://img-tmdetail.alicdn.com/tps/i4/T12pdtXaldXXXXXXXX-2-2.png) repeat;
+    background-size: 1.5% 1.5%;
+    opacity: .5; 
+    cursor: move;
+    display: none;
+}
+
+#info-main #im-left #max-img #maxbox {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    left: 450px;
+    overflow: hidden;
+    background: pink;
+    border: 1px solid #eee;
+    display: none;
+}
+#info-main #im-left #max-img #maxbox img {
+    width: 1000px;
+    height: 1000px;
+}
+
+
+#info-main #im-left #img-list {
+    width: 700px;
+    height: 104px;
+}
+#info-main #im-left #img-list div:first-Child {
+    margin-left: 111px;
+}
+#info-main #im-left #img-list div {
+    width: 84px; 
+    height: 84px;
+    border: 1px solid #eee;
+    float: left;
+    margin-left:6px;
+}
+#info-main #im-left #img-list .img {
+    width: 84px;
+    height: 84px;
+}
+#info-main #im-left #img-list div:hover {
+    border: 1px solid #ff0036;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#info-main #im-right {
+    width: 50%;
+    height: 660px;
+    float: left;
+}
+#info-main:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+#info-main #im-right a {
+    color: #000;
+    font-size: 15px;
+}
+#info-main #im-right #version {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+#info-main #im-right #version a {
+    width: 115px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    margin: 10px 38px;
+    border: 2px solid #ff0036;
+}
+#info-main #im-right #color {
+    width: 550px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#info-main #im-right #color a {
+    width: 115px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+}
+#info-main #im-right #color a:hover {
+    border: 1px solid #ff0036;
+}
+#info-main #im-right #color a:nth-Child(2) {
+    border: 2px solid #ff0036;
+}
+#info-main #im-right #color a:nth-Child(5) {
+    margin-left: 87px;
+}
+
+
+#info-main #im-right #type {
+    width: 550px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+#info-main #im-right #type a {
+    width: 115px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+}
+#info-main #im-right #type a:hover {
+    border: 1px solid #ff0036;
+}
+#info-main #im-right #type a:nth-Child(2) {
+    border: 2px solid #ff0036;
+}
+#info-main #im-right #type a:nth-Child(5) {
+    margin-left: 87px;
+}
+#info-main #im-right #rom {
+    height: 50px;
+    margin-bottom: 10px;
+}
+#info-main #im-right #rom a, #ram a, #num a{
+    width: 115px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 27px;
+    margin: 10px 10px;
+    border: 1px solid #ccc;
+}
+#info-main #im-right #rom a:hover, #ram a:hover, #num a:hover {
+    border: 1px solid #ff0036;
+}
+#info-main #im-right #rom a:nth-Child(3) {
+    border: 2px solid #ff0036;
+}
+#info-main #im-right #ram {
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+#info-main #im-right #ram a:nth-Child(4) {
+    border: 2px solid #ff0036;
+}
+#info-main #im-right #num input {
+    width: 62px;
+    height: 28px;
+    margin-left: 38px;
+    padding-left: 50px;
+    margin-right: 10px;
+}
+#info-main #im-right #num a {
+    width: 28px;
+    height: 28px;
+}
+
+
+#info-main #im-right #buy {
+    height: 50px;
+    margin-top: 15px;
+    position: relative;
+}
+#info-main #im-right #buy a:first-Child{
+    display: inline-block;
+    width: 168px;
+    height: 40px;
+    background: #ffeded;
+    color: #ff0036;
+    border: 1px solid #ff0036;
+    margin-top: 5px;
+    margin-left: 87px;
+    line-height: 40px;    
+    text-align: center;
+}
+#info-main #im-right #buy a:first-Child:hover {
+    background: #ff0036;
+    color: #fff;
+}
+#info-main #im-right #buy a:last-Child {
+    display: inline-block;
+    width: 168px;
+    height: 40px;
+    background: #ffeded;
+    color: #ff0036;
+    border: 1px solid #ff0036;
+    margin-top: 5px;
+    margin-left: 10px;
+    line-height: 40px;    
+    text-align: center;
+}
+#info-main #im-right #buy a:last-Child:hover {
+    background: #ff0036;
+    color: #fff;
+}
+#info-main #im-right #buy a:last-Child:hover i{
+    color: #fff;
+}
+#info-main #im-right #buy a span {
+    font-size: 15px; 
+}
+#info-main #im-right #buy i {
+    color: #ff0036;
+    font-size: 15px;
+    position: absolute;
+    top: 17.5px;
+    left: 299px;
+}
+#info-main #im-right label {
+    color: #838383;
+    font-size: 14px;
+    padding-left: 18px;
+} 
+

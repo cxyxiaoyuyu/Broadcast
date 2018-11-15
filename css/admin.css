@@ -1,0 +1,360 @@
+body {
+    background: #fff;
+}
+#menu-account {
+    padding-left: 0px;
+}
+#menu-account li {
+    text-align: center;
+}
+#admin-main {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+}
+#admin-main .date {
+    width: 600px;
+    height: 40px;
+    margin: 30px auto;
+}
+#admin-main .date input[type=date] {
+    width: 120px;
+    height: 28px;
+    margin-left: 12px;
+}
+#admin-main .date input[type=text] {
+    width: 160px;
+    height: 28px; 
+    margin-left: 15px;
+}
+#admin-main .date a {
+    display: inline-block;
+    background: #5eb95e;
+    color: #fff;
+    width: 60px;
+    height: 28px;
+    padding-left: 25px;
+    margin-left: 12px;
+    line-height: 28px;
+    border-radius: 6px;
+    position: relative;
+    cursor: pointer;
+}
+#admin-main .date a i {
+    position: absolute;
+    left: 8px;
+    top: 5px;
+}
+#admin-main .manageusr {
+    height: 45px;
+    background: #eee;
+}
+#admin-main .manageusr a:first-child {
+    margin-left: 28px;
+    background: #dd514c;
+}
+#admin-main .manageusr a:nth-child(2) {
+    background: #0a6999;
+}
+#admin-main .manageusr a:nth-child(3) {
+    background: #5eb95e;
+}
+#admin-main .manageusr a:last-child {
+    background: blue;
+}
+#admin-main .manageusr a {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 8px;
+    color: #fff;
+    cursor: pointer;
+}
+#admin-main .display {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-left: 28px;
+}
+#admin-main .display .filter {
+    float: right;
+    margin-right: 90px;
+}
+#admin-main .display .filter input {
+    width: 178px;
+    height: 26px;
+}
+#admin-main .table {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+#admin-main .table table {
+    width: 1260px;
+    height: auto;
+    border-collapse: collapse;
+    margin-left: 28px;
+    font-family: monospace;
+    font-size: 14px;
+    color: #333;
+}
+#admin-main .table table tr:first-child {
+    width: 100px;
+    height: 32px;
+    font-weight: bold;
+}
+#admin-main .table table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    height: 30px;
+    cursor: pointer;
+}
+#admin-main .table table td i {
+    color: #666;
+}
+#admin-main .table .adduser {
+    width: 800px;
+    height: 480px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    display: none;
+    z-index: 4;
+}
+#admin-main .table .floatbox .top {
+    positon: relative; 
+    background: #eee;
+    height: 42px;
+    overflow: hidden;
+}
+#admin-main .table .floatbox .top span {
+    padding-left: 22px;
+    display: inline-block;
+    margin-top: 9px;
+}
+#admin-main .table .floatbox .top i{
+    width: 28px;
+    height: 32px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 22px;
+    font-weight: normal;
+    float: right;
+    margin-right: 12px;
+    cursor: pointer;
+}
+#admin-main .table .adduser .top i:hover {
+    color: rgb(92,152,222);
+}
+#admin-main .table .adduser .au-main div {
+    margin-top: 20px;
+}
+#admin-main .table .adduser .au-main label {
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    display: inline-block;
+    width: 68px;
+    height: 30px;
+    margin-right: 50px;
+    margin-left: 68px;
+}
+#admin-main .table .adduser .au-main input:not([type=radio]) {
+    width: 500px;
+    height: 26px;
+    padding-left: 20px;
+}
+#admin-main .table .adduser .au-main input[type=radio] {
+    margin-left: 20px;
+}
+#admin-main .table .adduser .au-main a {
+    display: inline-block;
+    cursor: pointer;
+    width: 126px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 40%;
+    text-align: center;
+    line-height: 36px;
+    background: #5a98de;
+    color: #fff;
+}
+#admin-main .table .adduser .au-main a:hover {
+    background: #0a6999;
+}
+
+
+
+#admin-main .table .chpasswd {
+    width: 760px;
+    height: 260px;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    display: none;
+    z-index: 4;
+}
+#admin-main .table .chpasswd .cp-main div {
+    margin-top: 20px;
+}
+#admin-main .table .chpasswd .cp-main label {
+    width: 68px;
+    height: 26px;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    margin-left: 68px;
+    margin-right: 40px;
+}
+#admin-main .table .chpasswd .cp-main input {
+    width: 468px;
+    height: 26px;
+    padding-left: 20px;
+}
+#admin-main .table .chpasswd .cp-main a {
+    display: inline-block;
+    cursor: pointer;
+    width: 126px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 40%;
+    text-align: center;
+    line-height: 36px;
+    background: #5a98de;
+    color: #fff;
+}
+#admin-main .table .chpasswd .cp-main a:hover {
+    background: #0a6999;
+}
+
+
+#admin-main .table .addsave {
+    width: 760px;
+    height: 260px;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    display: none;
+    z-index: 4;
+}
+#admin-main .table .addsave .as-main div {
+    margin-top: 20px;
+}
+#admin-main .table .addsave .as-main label {
+    width: 68px;
+    height: 26px;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    margin-left: 68px;
+    margin-right: 40px;
+}
+#admin-main .table .addsave .as-main input {
+    width: 468px;
+    height: 26px;
+    padding-left: 20px;
+}
+#admin-main .table .addsave .as-main a {
+    display: inline-block;
+    cursor: pointer;
+    width: 126px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 40%;
+    text-align: center;
+    line-height: 36px;
+    background: #5a98de;
+    color: #fff;
+}
+#admin-main .table .addsave .as-main a:hover {
+    background: #0a6999;
+}
+#admin-main .table .chstate {
+    width: 760px;
+    height: 260px;
+    background: #fff;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    display: none;
+    z-index: 4;
+}
+#admin-main .table .chstate .cs-main div {
+    margin-top: 20px;
+}
+#admin-main .table .chstate .cs-main label {
+    width: 68px;
+    height: 26px;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 16px;
+    color: #555;
+    margin-left: 68px;
+    margin-right: 40px;
+}
+#admin-main .table .chstate .cs-main input {
+    width: 468px;
+    height: 26px;
+    padding-left: 20px;
+}
+#admin-main .table .chstate .cs-main a {
+    display: inline-block;
+    cursor: pointer;
+    width: 126px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 40%;
+    text-align: center;
+    line-height: 36px;
+    background: #5a98de;
+    color: #fff;
+}
+#admin-main .table .chstate .cs-main a:hover {
+    background: #0a6999;
+}
+#admin-main .page {
+    width: 156px;
+    height: 40px;
+    float: right;
+    margin-bottom: 28px;
+    margin-right: 62px;
+}
+#admin-main .page a {
+    display: inline-block;
+    width: 56px;
+    height: 28px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+}
+#admin-main .page a:hover {
+    background: rgb(90,152,222);
+    color: #fff;
+}
+#admin-main .page a:nth-child(2) {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ddd;
+    background: rgb(90,152,222);
+    color: #fff;
+}

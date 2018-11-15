@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>test1</title>
+        <meta charset="utf-8" />
+        <style>
+* {
+    padding: 0;
+    margin: 0;
+}
+#account {
+    float: left;
+}
+.myaccount {
+    float: left;
+    transition: all 3s ease;
+}
+.checkout {
+}
+.login {
+    width: 120px;
+    position: absolute;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.login {
+    width: 120px;
+    background: pink;
+    text-align: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: left top;
+}
+.myaccount:hover .login {
+    opacity: 1;
+    transform: scale(1);
+    width: 120px;
+    height: 90px;
+    background-color: #abcdef;
+}
+.myaccount a:hover {
+    color: red;
+}
+.myaccount:hover {
+    background: orange;
+}
+        </style>
+    </head>
+    <body>
+        <div class="account">
+            <div class="myaccount">
+                <a href="#">My Account &nbsp;</a>
+                <div class="login">
+                    <ul>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                <a href="#">Checkout</a>
+        </div>
+    </body>
+</html>

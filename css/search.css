@@ -1,0 +1,158 @@
+#se-main {
+    width: 100%;
+    background: #fff;
+}
+#se-main #im-top {
+    width: 100%;
+    height: 66px;
+    background: #eee;
+    position: relative;
+}
+#se-main #im-top .detail {
+    font-size: 20px;
+    padding-left: 35px;
+    line-height: 45px;
+    font-family: RobotoBold;
+}
+#se-main #im-top #menu {
+    float: right;
+    margin: 15px 20px;
+}
+#se-main #im-top ul .menu {
+    float: right;
+    padding-right: 20px;
+    font-size: 14px;
+    font-family: RobotoRegular;
+    color: #464646;
+    cursor: pointer;
+}
+#se-main #im-top .menu:hover {
+    color: #ffaa00;
+}
+#se-main #im-top .share-menu {
+    width: 168px;
+    height: 245px;
+    background: #151515;
+    position: absolute;
+    right: 90px;
+    top: 46px;
+    opacity: 0;
+    color: #eee;
+    transform: scale(0);
+    transition: all .5s ease-in;
+}  
+#se-main #im-top .share-menu li:first-Child {
+    margin-top: 12px;
+}
+#se-main #im-top .share-menu li {
+    padding: 5px;
+}
+#se-main #im-top .share-menu a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffaa00;
+    margin-left: 12px;
+    color: #ffaa00;
+}
+#se-main #im-top .share-menu a:hover {
+    color: #fff;
+    background: #ffaa00;
+    border: 1px solid #ffaa00;
+}
+#se-main #im-top .share-menu span:hover {
+    color: #ffaa00;
+}
+#se-main #im-top .share-menu a .fa-qq {
+    font-size: 17px;
+    padding: 7px 6px;
+}
+#se-main #im-top .share-menu a .fa-wechat {
+    font-size: 17px;
+    padding: 7px 5px;
+}
+#se-main #im-top .share-menu a .fa-weibo {
+    font-size: 18px;
+    padding: 7px 5px;
+}
+#se-main #im-top .share-menu a .fa-facebook {
+    font-size: 19px;
+    padding: 7px 9px;
+}
+#se-main #im-top .share-menu a .fa-twitter {
+    font-size: 19px;
+    padding: 7px 7px;
+}
+#se-main #im-top .share-menu li span {
+    padding-left: 22px; 
+    font-family: PoppinsRegular;
+    font-size: 13px;
+}
+
+#se-main #im-top .share:hover .share-menu {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#se-main #search-results {
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 38px;
+    margin: 0 auto;
+
+}
+#se-main #search-results #requirement {
+    height: 60px;
+}
+#se-main #search-results #requirement a {
+    width: 150px;
+    height: 40px;
+    display: inline-block;
+    margin: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background: #ffaa00;
+    border-radius: 2px;
+}
+#se-main #search-results #requirement a:hover {
+    background: #e01f1f;
+}
+
+#se-main #search-results #requirement a:active {
+    position: relative;
+    top: 2px;
+}
+#se-main #search-results .search-results {
+    width: 23%;
+    height: 356px;
+    margin-left: 15px;
+    margin-top: 18px;
+    float: left;
+    transition: all .3s;
+    border: 1px solid transparent;
+}
+#se-main #search-results .search-results:hover {
+    position: relative;
+    top: -3px;
+    box-shadow: 0px 15px 30px rgba(0,0,0,.2);
+}
+#se-main #search-results .search-results img {
+    width: 100%;
+    height: 280px;
+}
+#se-main #search-results .search-results .type {
+    font-size: 18px;
+    padding-left: 68px;
+    line-height: 38px;
+    color: rgba(17,44,17,.58);
+}
+#se-main #search-results .search-results i {
+    padding-left: 60px;
+    color: #ffaa00;
+}
+#se-main #search-results .search-results .volume {
+    padding-left: 18px;
+    color: rgba(0,0,0,.65);
+}
